@@ -2,7 +2,18 @@
     ViewData["Title"] = "Home Page";
 }
 
-<div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://learn.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
-</div>
+<h2>list of employees</h2>
+@{
+    var employee = ViewBag.employee;
+}
+@foreach (var e in employee)
+{
+    @e.id<br/>
+    @e.fullName<br/>
+    @e.gender<br/>
+    @e.phone<br/>
+    @e.email<br/>
+    @e.salary<br/>
+    @e.status<br/>
+    <br />
+}
