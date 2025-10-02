@@ -17,7 +17,7 @@ namespace ltweb_bt5.Models
         [Range(18, 60, ErrorMessage = "Tuoi trong khoang 18-60")]
         public int Age { get; set; }
         [Required(ErrorMessage = "Ban chua nhap email")]
-        [RegularExpression(@"[A-Za-z0-9.]+@[A-Za-z0-9]+9", ErrorMessage = "Ban chua nhap dung dinh dang")]
+        [RegularExpression(@"[A-Za-z0-9.]+@[A-Za-z0-9]+\.[A-Za-z]{2, 4}", ErrorMessage = "Ban chua nhap dung dinh dang")]
         public string Email { get; set; }
     }
 }

@@ -25,10 +25,6 @@ namespace ltweb_bt5.Controllers
             }
             return Content("Ban da nhap dung");
         }
-        public IActionResult UserAnnotation()
-        {
-            return View();
-        }
         public IActionResult UserAnnotation(User user)
         {
             if (ModelState.IsValid)
